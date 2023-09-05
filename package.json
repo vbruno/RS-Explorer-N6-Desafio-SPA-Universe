@@ -1,0 +1,14 @@
+{
+  "name": "rs-explorer-n6-desafio-spa-universe",
+  "version": "1.0.0",
+  "description": "Desafio RocketSeat sobre SPA",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "Bruno S Velho",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
