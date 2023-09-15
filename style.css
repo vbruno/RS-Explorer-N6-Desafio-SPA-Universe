@@ -17,20 +17,18 @@ input {
 }
 
 body {
-  background-color: #010608;
-  background-image: url("./src/assets/mountains-universe-1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-
   color: #fff;
 }
 
+/* PARTE DE NAVEGAÇÃO */
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
 
   padding: 4rem 7.2rem;
+
+  margin-bottom: -12.2rem;
 }
 
 ul {
@@ -47,7 +45,8 @@ ul {
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2.2rem; /* 90.278% */
+  line-height: 2.2rem;
+  /* 90.278% */
 }
 
 a {
@@ -55,24 +54,35 @@ a {
   color: #fff;
 }
 
-main {
-  display: grid;
-  place-content: center;
-  height: 100vh;
-
-  gap: 2.4rem;
-}
-
-main h1 {
+h1 {
   color: var(--platform-aliases-ttulos, #e1e1e6);
   font-family: "Roboto";
   font-size: 4.8rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 125%; /* 60px */
+  line-height: 125%;
+  /* 60px */
 }
 
-main button {
+p {
+  color: var(--platform-aliases-ttulos, #e1e1e6);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+
+#home {
+  height: 100vh;
+
+  background-color: #010608;
+  background-image: url("./src/assets/mountains-universe-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
   display: inline-flex;
   padding: 12px 32px;
   justify-content: center;
@@ -95,7 +105,35 @@ main button {
   transition: all 0.3s ease-in-out;
 }
 
-main button:hover {
+button:hover {
   background: #fff;
   color: #02799d;
+}
+
+#universo {
+  height: 100vh;
+
+  padding-top: 18.5rem;
+  padding-left: 10.2rem;
+
+  background-color: #010608;
+  background-image: url("./src/assets/mountains-universe-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#universo section {
+  display: flex;
+  flex-direction: column;
+
+  width: 64.8rem;
+
+  gap: 1.6rem;
+}
+
+#exploracao {
+  background-color: #010608;
+  background-image: url("./src/assets/mountains-universe-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
