@@ -34,30 +34,39 @@ nav {
 ul {
   display: flex;
   flex-direction: row;
-  gap: 54px;
+  gap: 5.4rem;
 
-  margin-left: 43px;
+  margin-left: 4.3rem;
 
   list-style: none;
 
-  color: #fff;
+  color: #c4c4cc;
   font-family: "Roboto";
-  font-size: 2.4rem;
+  font-size: 21.667px;
   font-style: normal;
   font-weight: 400;
-  line-height: 2.2rem;
+  line-height: 21.667px; /* 100% */
   /* 90.278% */
 }
 
 a {
   text-decoration: none;
+  color: #c4c4cc;
+}
+
+.active {
   color: #fff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.667px; /* 90.278% */
 }
 
 h1 {
-  color: var(--platform-aliases-ttulos, #e1e1e6);
+  color: #e1e1e6;
   font-family: "Roboto";
-  font-size: 4.8rem;
+  font-size: 6.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: 125%;
@@ -65,9 +74,9 @@ h1 {
 }
 
 p {
-  color: var(--platform-aliases-ttulos, #e1e1e6);
-  font-family: Roboto;
-  font-size: 18px;
+  color: #e1e1e6;
+  font-family: "Roboto";
+  font-size: clamp(1.6rem, 1.6rem + 0.5vw, 2.4rem);
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 28.8px */
@@ -75,6 +84,13 @@ p {
 
 #home {
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2.4rem;
 
   background-color: #010608;
   background-image: url("./src/assets/mountains-universe-1.png");
@@ -84,16 +100,16 @@ p {
 
 button {
   display: inline-flex;
-  padding: 12px 32px;
+  padding: 1.2rem 3.2rem;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 0.8rem;
 
   background: transparent;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   border: 2px solid #fff;
 
-  color: var(--neutral-colors-white, #fff);
+  color: #fff;
   text-align: center;
   font-family: "Roboto";
   font-size: 1.4rem;
@@ -110,25 +126,29 @@ button:hover {
   color: #02799d;
 }
 
-#universo {
+#universo,
+#exploracao {
   height: 100vh;
 
   padding-top: 18.5rem;
   padding-left: 10.2rem;
+}
 
+#universo section,
+#exploracao section {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 64.8rem;
+  max-width: 104.8rem;
+  gap: 1.6rem;
+}
+
+#universo {
   background-color: #010608;
   background-image: url("./src/assets/mountains-universe-2.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#universo section {
-  display: flex;
-  flex-direction: column;
-
-  width: 64.8rem;
-
-  gap: 1.6rem;
 }
 
 #exploracao {

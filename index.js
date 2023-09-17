@@ -1,7 +1,5 @@
 import { Router } from "./src/js/router.js";
 
-console.log("Hello, world!");
-
 const router = new Router();
 
 router.add("/", "./src/pages/home.html");
